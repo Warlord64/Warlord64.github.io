@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+
+
+<body class="antialiased min-h-[100vh]">
+  
+    <nav>
+        <div class="nav-wrapper bg-white/30 backdrop-blur-sm flex ">
+
+
+            <div class="left-nav flex items-center">
+                <i class="desk-hid fa fa-laptop ml-4 items-center"  aria-hidden="true"></i>
+                <button class="hide-button"><i class="fa fa-mobile"></i></button>
+                <ul class="flex items-center">
+                    <!--Projects-view-->
+                    <li class="text-center absolute top-[2rem] left-[10px]" id="pro-navigation" data-visible="false">
+                        <div class=" bg-white/30 backdrop-blur-sm p-5 rounded-[15px] font-semibold">
+                            <p class="pro nav font-semibold p-2 flex"><img src="../img/logo2.png" alt=""><span class="ml-3">skypeeker</span></p>
+                           
+                            <p class="pro nav p-2"><img src="../img/python.png" alt=""><span class="ml-3">library management system</span></p>
+                            
+                            <p class="pro nav p-2"><img src="../img/borex.png" alt=""> <span class="ml-3">Borex</span></p>
+                        </div>
+                    </li>
+                    <button class="pro-toggle cursor-pointer h-6" aria-controls="primary-navigation" aria-expanded="false">
+                        <li ><span class="ml-3 text-[0.9rem]" href="">Projects</span></li>
+                        <div class="cover-pro z-[-3] bg-transparent absolute h-[100vh] w-[100%] top-8 left-0 cursor-default">
+                            
+                        </div>
+                    </button>
+                    <script src="../static/pro.js"></script>
+                    
+                    <li ><a class="ml-3 hover:font-semibold" href="https://skypeeker.pythonanywhere.com/" target="_blank">Go</a></li>
+
+                    <!--Hover help-->
+                    <div class="help-hover">
+                        <li ><a class="ml-3" href="">Help</a></li>
+
+                        <div class="wrap hidden">
+                            <div class="grid-container">
+                                <div class="grid-item">
+                                    <a href=""><img class="" src="../img/instagram (1).png" alt=""> </a> 
+                                    <a href=""> <img class="" src="../img/github (1).png" alt=""></a> 
+                                </div>
+                                <div class="grid-item-two">
+                                    <a href=""> <img src="../img/discord (1).png" alt=""></a> 
+                                    <a href=""><img src="../img/telegram (1).png" alt=""></a>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="right-nav items-center absolute top-0 right-4">
+                <ul class="flex">
+                    <li class="time-cover">
+                        <p id="time" class="mr-3"></p>
+                    </li>
+                    <li ><script src="../static/main.js"></script>
+                        <i class="fa fa-search mr-3 animate-pulse"></i>
+                    </li>
+                    <!--img-->
+                    <li class="text-center" id="primary-navigation" data-visible="false">
+                        <div>
+                            <p class="namv">hi i am aryan</p>
+                            <a href="" class="items-center text-center "><img class="" src="../img/913a84cf-52b9-4959-b12d-30bd0f312e2f.png" alt=""></a>
+                            <p class="mt-[2rem]">i am an tech 
+                                enthusiast</p>
+                        </div>
+                    </li>
+                    <button class="mobile-nav-toggle cursor-pointer h-6" aria-controls="primary-navigation" aria-expanded="false">
+                            <span></span>
+                    </button>
+                    
+                    <li>
+                        <i class="fa-solid fa-bars-staggered ml-3 items-center relative"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+<!--NAV COVER-->
+
+        <div class="nav-cover hidden" id="cover-navigation" data-visible="false">
+            <div class="topleft bg-white/60">
+                <div class="flex">
+                    <span class=""><img src="../img/github (1).png" alt=""></span>
+                    <span class=""><img src="../img/discord (1).png" alt=""></span>
+                </div>
+                <div class="flex">
+                    <span class="sp"><img src="../img/instagram (1).png" alt=""></span>
+                    <span class="sp"><img src="../img/telegram (1).png" alt=""></span>
+                    
+                </div>
+            </div>
+            <div class="topright align-middle items-center text-center">
+                <p class="text-center">Now Listning</p>
+                <img src="../img/71JcWq0TgWL._SY355_.jpg" alt="" class="disk  rounded-full w-[4rem] mt-1 mb-3 ml-[30%] animate-slowspin origin-center">
+                <i onclick="playpause()" class="fa fa-play bg-white/60 items-center p-[8px] rounded-[10px]" id="ctrlIcon"></i>
+                <div class="music">
+                    <audio id="song">
+                        <source src="../media/The Civil Wars - Dust to Dust (Official Video).mp3">
+                    </audio>
+                    <input type="range" class="" value="0" id="progress">
+                </div>
+            </div>
+            <script src="../static/playmusic.js"></script>
+            <div class="midleft">
+                <img src="../img/photos.png" alt="" class="w-[10rem] text-center items-center ml-[50%] translate-x-[-50%] cursor-pointer">
+            </div>
+            <div class="midright">
+                <div class="flex">
+                <span class="slider"><input id="opacity-slider" type="range" min="10" max="100" value="100"><i class="fa fa-sun absolute"></i></span>
+                <span class="slider ml-[-3rem]"><input id="opacity-slider" type="range"  min="60" max="100" value="100"><i class="fa fa-moon"></i></span>
+            </div>
+        </div>
+
+            <div class="bottombar text-center items-center">
+                <button class="p-[1rem]"><i class="fa fa-moon"></i></button>
+                <button class="p-[1rem] "><i class="fa fa-moon"></i></button>
+                <span class="">
+                    <ul class="clock2 absolute top-[0rem] left-[58%] h-[4rem] w-[9rem] hidden p-2">
+                    <li class="">
+                        <p id="time2" class="mr-3 text-red-700"></p>
+                    </li>
+                    <script src="../static/time2.js"></script>
+                </ul></span>
+            </div>
+
+          
+        </div>
+        <script src="../static/control.js"></script>
+        <script src="../static/opacity.js"></script>
+        <script src="../static/topnav.js"></script>
+    </nav>
+
+    
+    <div class="dock-top absolute left-[50%] bottom-0 translate-x-[-50%]">
+        
+        <div class="dock text-center bg-white/30 backdrop-blur-sm p-2  flex rounded-lg items-center w-max">
+        
+            
+            
+            <a href="" class="first_a"><img class="" src="../img/html5.png" alt="" onmouseover="mouseOver()" onmouseout="mouseOut()">
+                    </a>
+                    <span class="span dis  rounded-lg left-[5%]">
+                        HTML
+                    </span>
+
+
+                    
+                    <a href=""><img  src="../img/css3.png" alt="" onmouseover="mouseOvercss()" onmouseout="mouseOutcss()"></a>
+
+<span class="span dis1 rounded-lg left-[23%]">
+                        CSS
+                    </span>
+
+                    <a href=""><img src="../img/javascript.png" alt="" onmouseover="mouseOverjs()" onmouseout="mouseOutjs()"></a>
+
+<span class="span dis2 rounded-lg left-[33%]">
+                        JavaScript
+                    </span>
+
+
+                    <a href=""><img src="../img/tailwind-css.512x307.png" alt="" onmouseover="mouseOvertw()" onmouseout="mouseOuttw()"></a>
+<span class="span dis3 rounded-lg left-[50%]">
+                    TailWind
+                    </span>
+
+
+                    <a href=""><img src="../img/git.png" alt="" onmouseover="mouseOvergh()" onmouseout="mouseOutgh()"></a>
+<span class="span dis4 rounded-lg left-[70%]">
+                        git
+                    </span>
+
+                    <a href=""><img src="../img/linux (1).png" alt="" onmouseover="mouseOverdb()" onmouseout="mouseOutdb()"></a>
+                    <span class="span dis5 rounded-lg left-[83%]">
+Linux                   </span>
+        </div>
+    </div>
+    <script src="../static/dock.js"></script>
+
+    
+</body>
+</html>
