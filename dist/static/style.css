@@ -334,7 +334,7 @@ transition: 0.4s ease;}
     justify-content: space-between;
     height: 4rem;}
     #cover-navigation{
-        transform: translateY(60%) !important;
+        transform: translateY(100%) !important;
         transition: transform 350ms ease-out;
     
     }
