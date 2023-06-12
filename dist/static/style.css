@@ -363,7 +363,7 @@ transition: 0.4s ease;}
 
         max-width: 46%;
     
-        transform: translateX(-120%);
+        transform: translateX(-130%);
         transition: transform 350ms ease-out;
     }
     
