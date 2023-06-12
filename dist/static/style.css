@@ -363,12 +363,12 @@ transition: 0.4s ease;}
 
         max-width: 46%;
     
-        transform: translateX(-130%);
+        transform: translateX(-140%);
         transition: transform 350ms ease-out;
     }
     
     #pro-navigation[data-visible = "true"]{
-        transform: translateX(2%);
+        transform: translateX(5%);
     }
     #pro-navigation .pro.nav{
         background-color: rgba(255, 255, 255, 0.762);
