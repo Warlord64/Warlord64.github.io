@@ -3,7 +3,7 @@ margin: 0;
 padding: 0;
 background-image: url(../img/366398.jpg);
 height: 100vh;
-overflow: hidden;
+overflow: hidden !Important;
 width: 100%;
 background-position: center;
 background-size:cover;
@@ -11,6 +11,7 @@ background-repeat: no-repeat;
 user-select: none;
 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+nav{overflow:hidden;}
 nav a{font-size: 0.8rem;}
 
 
@@ -178,6 +179,9 @@ transition: 0.4s ease;}
 .hide-button{display: none;}
 
 @media (max-width:30em) {
+    body{
+    overflow:hidden !Important;
+    }
     .desk-hid{display: none !important;}
     .hide-button{display: initial;
     margin-left: 1rem;}
@@ -359,7 +363,7 @@ transition: 0.4s ease;}
 
         max-width: 46%;
     
-        transform: translateX(-110%);
+        transform: translateX(-120%);
         transition: transform 350ms ease-out;
     }
     
