@@ -334,13 +334,13 @@ transition: 0.4s ease;}
     justify-content: space-between;
     height: 4rem;}
     #cover-navigation{
-        transform: translateY(50%) !important;
+        transform: translateY(60%) !important;
         transition: transform 350ms ease-out;
     
     }
 
     #cover-navigation[data-visible = "true"]{
-        transform: translateY(7%) !important;
+        transform: translateY(8%) !important;
     }
     #time{display: none;}
     .clock2{
@@ -363,12 +363,12 @@ transition: 0.4s ease;}
 
         max-width: 46%;
     
-        transform: translateY(-140%);
+        transform: translateX(-140%);
         transition: transform 350ms ease-out;
     }
     
     #pro-navigation[data-visible = "true"]{
-        transform: translateY(10%);
+        transform: translateX(10%);
     }
     #pro-navigation .pro.nav{
         background-color: rgba(255, 255, 255, 0.762);
